@@ -1,4 +1,4 @@
-package com.mei_husky.sample_dagger2.view.activity;
+package com.mei_husky.sample_dagger2.module.a01activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.mei_husky.sample_dagger2.R;
-import com.mei_husky.sample_dagger2.dagger.component.DaggerA01SimpleComponent;
-import com.mei_husky.sample_dagger2.dagger.module.A01SimpleModule;
-import com.mei_husky.sample_dagger2.model.Student;
+import com.mei_husky.sample_dagger2.bean.Student;
 
 import javax.inject.Inject;
 

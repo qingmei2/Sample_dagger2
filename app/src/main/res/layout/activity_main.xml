@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mei_husky.sample_dagger2.view.MainActivity">
+    tools:context="com.mei_husky.sample_dagger2.module.MainActivity">
 
     <Button
         android:id="@+id/btn_a01_base"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Dagger2基础使用"
-        android:layout_height="wrap_content" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_a02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dagger2进阶使用"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a01_base" />
+
 
 </android.support.constraint.ConstraintLayout>

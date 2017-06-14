@@ -1,6 +1,4 @@
-package com.mei_husky.sample_dagger2.dagger.module;
-
-import com.mei_husky.sample_dagger2.view.activity.A01SimpleActivity;
+package com.mei_husky.sample_dagger2.module.a01activity;
 
 import dagger.Module;
 

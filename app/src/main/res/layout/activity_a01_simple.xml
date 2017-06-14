@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mei_husky.sample_dagger2.view.activity.A01SimpleActivity">
+    tools:context="com.mei_husky.sample_dagger2.module.a01activity.A01SimpleActivity">
 
     <Button
         android:id="@+id/btn_01"

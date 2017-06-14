@@ -1,4 +1,4 @@
-package com.mei_husky.sample_dagger2.model;
+package com.mei_husky.sample_dagger2.bean;
 
 import javax.inject.Inject;
 
@@ -12,6 +12,7 @@ public class Student {
 
     @Inject
     public Student() {
+
     }
 
 }

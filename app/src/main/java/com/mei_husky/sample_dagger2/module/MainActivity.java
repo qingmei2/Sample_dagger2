@@ -1,4 +1,4 @@
-package com.mei_husky.sample_dagger2.view;
+package com.mei_husky.sample_dagger2.module;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.mei_husky.sample_dagger2.R;
-import com.mei_husky.sample_dagger2.view.activity.A01SimpleActivity;
+import com.mei_husky.sample_dagger2.module.a01activity.A01SimpleActivity;
+import com.mei_husky.sample_dagger2.module.a02activity.A02Activity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,11 +26,14 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.btn_a01_base)
+    @OnClick({R.id.btn_a01_base, R.id.btn_a02})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_a01_base:
                 startActivity(new Intent(this, A01SimpleActivity.class));
+                break;
+            case R.id.btn_a02:
+                startActivity(new Intent(this, A02Activity.class));
                 break;
         }
     }
