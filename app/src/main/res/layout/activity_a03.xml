@@ -4,33 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mei_husky.sample_dagger2.module.MainActivity">
+    tools:context="com.mei_husky.sample_dagger2.module.a03scope.A03Activity">
 
     <Button
-        android:id="@+id/btn_a01_base"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Dagger2基础使用"
+        android:text="点击进入下一个Activity"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
-        android:id="@+id/btn_a02"
+    <TextView
+        android:id="@+id/tv_student1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Dagger2进阶使用"
+        android:text="1111111"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_a01_base" />
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
 
-    <Button
-        android:id="@+id/btn_a03"
+    <TextView
+        android:id="@+id/tv_student2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Scope使用"
+        android:text="1111111"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_a02" />
+        app:layout_constraintTop_toBottomOf="@id/tv_student1" />
+
 
 </android.support.constraint.ConstraintLayout>
