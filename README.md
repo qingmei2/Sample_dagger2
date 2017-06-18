@@ -18,3 +18,7 @@ http://blog.csdn.net/mq2553299/article/details/73136396
 Android 神兵利器Dagger2使用详解（三）进阶篇，不可自拔爱上Dagger2
 
 http://blog.csdn.net/mq2553299/article/details/73251405
+
+Android 神兵利器Dagger2使用详解（四）Scope注解的使用及源码分析
+
+http://blog.csdn.net/mq2553299/article/details/73414710
