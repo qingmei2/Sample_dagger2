@@ -1,7 +1,5 @@
 package com.mei_husky.sample_dagger2.bean;
 
-import javax.inject.Inject;
-
 /**
  * Created by QingMei on 2017/6/11 21:29
  * email:mei_husky@qq.com
@@ -10,7 +8,6 @@ import javax.inject.Inject;
 
 public class Student {
 
-    @Inject
     public Student() {
 
     }

@@ -41,6 +41,7 @@ public class A03Activity extends AppCompatActivity {
                 .build()
                 .inject(this);
 
+        //打印两个Student类
         tvStudent1.setText(student1.toString());
         tvStudent2.setText(student2.toString());
     }

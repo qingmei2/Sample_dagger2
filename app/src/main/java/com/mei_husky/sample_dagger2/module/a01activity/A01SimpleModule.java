@@ -1,6 +1,9 @@
 package com.mei_husky.sample_dagger2.module.a01activity;
 
+import com.mei_husky.sample_dagger2.bean.Student;
+
 import dagger.Module;
+import dagger.Provides;
 
 /**
  * Created by QingMei on 2017/6/11 21:33
@@ -16,4 +19,8 @@ public class A01SimpleModule {
         this.activity = activity;
     }
 
+    @Provides
+    Student provideStudent(){
+        return new Student();
+    }
 }
