@@ -33,4 +33,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_a02" />
 
+    <Button
+        android:id="@+id/btn_b01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Android Dagger2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_a03" />
+
 </android.support.constraint.ConstraintLayout>
