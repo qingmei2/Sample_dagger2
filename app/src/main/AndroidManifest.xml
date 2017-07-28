@@ -22,7 +22,6 @@
         <activity android:name=".module.a03scope.A03Activity" />
         <activity android:name=".module.a03scope.A04Activity" />
         <activity android:name=".module.a03scope.A05Activity"/>
-        <activity android:name=".module.b01android.B01AndroidDaggerActivity"/>
     </application>
 
 </manifest>

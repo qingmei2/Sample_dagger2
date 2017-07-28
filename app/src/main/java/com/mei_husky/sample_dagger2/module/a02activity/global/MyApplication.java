@@ -21,4 +21,5 @@ public class MyApplication extends Application{
                 .build();
         ComponentHolder.setAppComponent(appComponent);
     }
+
 }

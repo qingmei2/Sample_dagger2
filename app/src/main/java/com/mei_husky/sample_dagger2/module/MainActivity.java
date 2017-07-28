@@ -10,7 +10,6 @@ import com.mei_husky.sample_dagger2.R;
 import com.mei_husky.sample_dagger2.module.a01activity.A01SimpleActivity;
 import com.mei_husky.sample_dagger2.module.a02activity.A02Activity;
 import com.mei_husky.sample_dagger2.module.a03scope.A03Activity;
-import com.mei_husky.sample_dagger2.module.b01android.B01AndroidDaggerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_a03:
                 startActivity(new Intent(this, A03Activity.class));
-                break;
-            case R.id.btn_b01:
-                startActivity(new Intent(this, B01AndroidDaggerActivity.class));
                 break;
         }
     }
