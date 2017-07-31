@@ -1,4 +1,4 @@
-package com.qingmei2.androiddagger2;
+package com.qingmei2.androiddagger2.main;
 
 import android.app.Activity;
 
@@ -13,7 +13,7 @@ import dagger.multibindings.IntoMap;
  * desc:
  */
 @Module(subcomponents = MainActivitySubcomponent.class)
-abstract class MainActivityModule {
+public abstract class MainActivityModule {
 
     @Binds
     @IntoMap

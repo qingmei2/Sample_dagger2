@@ -1,15 +1,19 @@
-package com.qingmei2.androiddagger2;
+package com.qingmei2.androiddagger2.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
+
+import com.qingmei2.androiddagger2.R;
+import com.qingmei2.androiddagger2.base.BaseActivity;
+import com.qingmei2.androiddagger2.second.SecondActivity;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import dagger.android.AndroidInjection;
 
 
 /**
@@ -17,7 +21,7 @@ import dagger.android.AndroidInjection;
  * desc:
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Inject
     String className;
@@ -27,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         tvContent.setText(className);
+    }
+
+    public void gotoSecond(View view) {
+        startActivity(new Intent(this, SecondActivity.class));
     }
 
 }

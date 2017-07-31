@@ -1,4 +1,4 @@
-package com.qingmei2.androiddagger2;
+package com.qingmei2.androiddagger2.base;
 
 import android.app.Activity;
 import android.app.Application;
@@ -22,10 +22,7 @@ public class MyApplication extends Application implements HasActivityInjector {
     @Override
     public void onCreate() {
         super.onCreate();
-        DaggerMyAppComponent.builder()
-                .application(this)
-                .build()
-                .inject(this);
+        DaggerMyAppComponent.create().inject(this);
     }
 
     @Override
