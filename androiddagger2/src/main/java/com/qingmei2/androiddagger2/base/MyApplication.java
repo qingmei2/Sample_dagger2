@@ -16,6 +16,7 @@ import dagger.android.HasActivityInjector;
  */
 
 public class MyApplication extends Application implements HasActivityInjector {
+
     @Inject
     DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
 

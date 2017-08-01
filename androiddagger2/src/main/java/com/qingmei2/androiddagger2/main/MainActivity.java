@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.qingmei2.androiddagger2.R;
+import com.qingmei2.androiddagger2.Student;
 import com.qingmei2.androiddagger2.base.BaseActivity;
 import com.qingmei2.androiddagger2.second.SecondActivity;
 
@@ -25,6 +26,8 @@ public class MainActivity extends BaseActivity {
 
     @Inject
     String className;
+    @Inject
+    Student student;
 
     @BindView(R.id.tv_content)
     TextView tvContent;
@@ -34,7 +37,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        tvContent.setText(className);
+        tvContent.setText(className + student.toString());
     }
 
     public void gotoSecond(View view) {
