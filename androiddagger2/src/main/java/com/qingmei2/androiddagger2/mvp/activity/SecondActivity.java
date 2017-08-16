@@ -22,7 +22,7 @@ public class SecondActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
         TextView tv = (TextView) findViewById(R.id.tv_content);
         tv.setText(className);
     }
