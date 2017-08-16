@@ -1,4 +1,4 @@
-package com.qingmei2.androiddagger2.second;
+package com.qingmei2.androiddagger2.mvp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -1,6 +1,11 @@
-package com.qingmei2.androiddagger2.main;
+package com.qingmei2.androiddagger2.di.component;
 
-import com.qingmei2.androiddagger2.Student;
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.qingmei2.androiddagger2.bean.Student;
+import com.qingmei2.androiddagger2.mvp.activity.MainActivity;
+import com.qingmei2.androiddagger2.mvp.model.MainModel;
 
 import dagger.Module;
 import dagger.Provides;
@@ -31,8 +36,18 @@ public interface MainActivitySubcomponent extends AndroidInjector<MainActivity> 
         }
 
         @Provides
-        static Student provideStudent() {
+        Student provideStudent() {
             return new Student();
+        }
+
+        @Provides
+        SharedPreferences provideSp(MainActivity activity) {
+            return activity.getSharedPreferences("def", Context.MODE_PRIVATE);
+        }
+
+        @Provides
+        MainModel provideModel() {
+            return new MainModel();
         }
     }
 }

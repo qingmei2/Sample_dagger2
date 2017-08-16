@@ -1,6 +1,9 @@
-package com.qingmei2.androiddagger2.second;
+package com.qingmei2.androiddagger2.di.module;
 
 import android.app.Activity;
+
+import com.qingmei2.androiddagger2.mvp.activity.SecondActivity;
+import com.qingmei2.androiddagger2.di.component.SecondActivitySubcomponent;
 
 import dagger.Binds;
 import dagger.Module;

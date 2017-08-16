@@ -3,6 +3,8 @@ package com.qingmei2.androiddagger2.base;
 import android.app.Activity;
 import android.app.Application;
 
+import com.qingmei2.androiddagger2.di.DaggerMyAppComponent;
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;

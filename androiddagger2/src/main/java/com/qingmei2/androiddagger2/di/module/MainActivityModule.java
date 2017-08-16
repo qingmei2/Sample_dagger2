@@ -1,12 +1,12 @@
-package com.qingmei2.androiddagger2.main;
+package com.qingmei2.androiddagger2.di.module;
 
 import android.app.Activity;
 
-import com.qingmei2.androiddagger2.Student;
+import com.qingmei2.androiddagger2.di.component.MainActivitySubcomponent;
+import com.qingmei2.androiddagger2.mvp.activity.MainActivity;
 
 import dagger.Binds;
 import dagger.Module;
-import dagger.Provides;
 import dagger.android.ActivityKey;
 import dagger.android.AndroidInjector;
 import dagger.multibindings.IntoMap;

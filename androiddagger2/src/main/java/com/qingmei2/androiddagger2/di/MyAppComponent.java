@@ -1,8 +1,9 @@
-package com.qingmei2.androiddagger2.base;
+package com.qingmei2.androiddagger2.di;
 
 
-import com.qingmei2.androiddagger2.main.MainActivityModule;
-import com.qingmei2.androiddagger2.second.SecondActivityModule;
+import com.qingmei2.androiddagger2.base.MyApplication;
+import com.qingmei2.androiddagger2.di.module.MainActivityModule;
+import com.qingmei2.androiddagger2.di.module.SecondActivityModule;
 
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
