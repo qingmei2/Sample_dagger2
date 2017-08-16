@@ -8,7 +8,11 @@
         android:id="@+id/tv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <Button
+        android:onClick="requestHttp"
+        android:text="请求Presenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
         android:onClick="gotoSecond"
         android:text="SecondActivity"

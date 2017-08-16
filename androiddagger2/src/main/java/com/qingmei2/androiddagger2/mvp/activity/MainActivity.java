@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.qingmei2.androiddagger2.R;
 import com.qingmei2.androiddagger2.bean.Student;
@@ -52,6 +53,14 @@ public class MainActivity extends BaseActivity implements MainContract.View {
 
     public void gotoSecond(View view) {
         startActivity(new Intent(this, SecondActivity.class));
+    }
+
+    public void requestHttp(View view) {
+        presenter.requestHttp();
+    }
+
+    public void onGetMessage(String message){
+        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
     }
 
 }

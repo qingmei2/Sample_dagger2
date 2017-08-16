@@ -13,7 +13,16 @@ import javax.inject.Inject;
 
 public class MainPresenter implements MainContract.Presenter {
 
+    private final MainActivity view;
+    private final MainModel model;
+
     @Inject
     public MainPresenter(MainActivity view, MainModel model) {
+        this.view = view;
+        this.model = model;
+    }
+
+    public void requestHttp() {
+        view.onGetMessage(model.returnMessage());
     }
 }

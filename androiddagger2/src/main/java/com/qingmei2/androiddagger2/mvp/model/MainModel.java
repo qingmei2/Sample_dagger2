@@ -14,4 +14,8 @@ public class MainModel implements MainContract.Model {
     @Inject
     public MainModel() {
     }
+
+    public String returnMessage() {
+        return "qingmei2";
+    }
 }
