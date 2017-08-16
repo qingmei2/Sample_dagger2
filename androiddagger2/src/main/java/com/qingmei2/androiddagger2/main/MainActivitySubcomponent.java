@@ -1,5 +1,7 @@
 package com.qingmei2.androiddagger2.main;
 
+import com.qingmei2.androiddagger2.Student;
+
 import dagger.Module;
 import dagger.Provides;
 import dagger.Subcomponent;
@@ -22,9 +24,15 @@ public interface MainActivitySubcomponent extends AndroidInjector<MainActivity> 
 
     @Module
     class SubModule {
+
         @Provides
         String provideName() {
             return MainActivity.class.getName();
+        }
+
+        @Provides
+        static Student provideStudent() {
+            return new Student();
         }
     }
 }

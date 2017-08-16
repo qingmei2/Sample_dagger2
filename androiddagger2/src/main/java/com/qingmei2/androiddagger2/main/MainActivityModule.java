@@ -24,8 +24,4 @@ public abstract class MainActivityModule {
     abstract AndroidInjector.Factory<? extends Activity>
     bindMainActivityInjectorFactory(MainActivitySubcomponent.Builder builder);
 
-    @Provides
-    static Student provideStudent() {
-        return new Student();
-    }
 }
