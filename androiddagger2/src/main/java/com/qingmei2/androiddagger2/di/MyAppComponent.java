@@ -21,9 +21,5 @@ import dagger.android.support.AndroidSupportInjectionModule;
 })
 public interface MyAppComponent {
 
-//   @Component.Builder
-//   abstract class Builder extends AndroidInjector.Builder<MyApplication> {
-//   }
-
    void inject(MyApplication application);
 }
