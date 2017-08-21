@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.qingmei2.androiddagger2.R;
-import com.qingmei2.androiddagger2.bean.Student;
 import com.qingmei2.androiddagger2.base.BaseActivity;
 import com.qingmei2.androiddagger2.mvp.contract.MainContract;
 import com.qingmei2.androiddagger2.mvp.presenter.MainPresenter;
@@ -30,8 +29,6 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     @Inject
     String className;
     @Inject
-    Student student;
-    @Inject
     SharedPreferences sp;
     @Inject
     MainPresenter presenter;
@@ -45,7 +42,6 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         tvContent.setText(className + "\n" +
-                student.toString() + "\n" +
                 sp.toString() + "\n" +
                 presenter.toString());
 
