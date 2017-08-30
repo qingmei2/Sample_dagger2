@@ -18,8 +18,8 @@
 
 ### 这些文章源码所在Module:  androiddagger2
 
-* [打破Dagger2使用窘境：Dagger-Android详解](http://blog.csdn.net/mq2553299/article/details/77485800)
+* [打破Dagger2使用窘境：Dagger-Android使用详解](http://blog.csdn.net/mq2553299/article/details/77485800)
 
+* [Dagger-Android详解&源码分析](http://blog.csdn.net/mq2553299/article/details/77725912)
 
-
-
+![](https://github.com/qingmei2/Sample_dagger2/blob/master/DaggerAndroid%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.png)
