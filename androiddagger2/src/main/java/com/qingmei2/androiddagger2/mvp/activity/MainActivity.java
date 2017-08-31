@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.qingmei2.androiddagger2.R;
 import com.qingmei2.androiddagger2.base.BaseActivity;
+import com.qingmei2.androiddagger2.bean.Student;
 import com.qingmei2.androiddagger2.mvp.contract.MainContract;
 import com.qingmei2.androiddagger2.mvp.presenter.MainPresenter;
 
@@ -32,6 +33,10 @@ public class MainActivity extends BaseActivity implements MainContract.View {
     SharedPreferences sp;
     @Inject
     MainPresenter presenter;
+    @Inject
+    Student s1;
+    @Inject
+    Student s2;
 
     @BindView(R.id.tv_content)
     TextView tvContent;
@@ -42,8 +47,8 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         tvContent.setText(className + "\n" +
-                sp.toString() + "\n" +
-                presenter.toString());
+                s2.toString() + "\n" +
+                s1.toString());
 
     }
 
@@ -55,8 +60,8 @@ public class MainActivity extends BaseActivity implements MainContract.View {
         presenter.requestHttp();
     }
 
-    public void onGetMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    public void onGetMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 }
