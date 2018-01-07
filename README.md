@@ -4,6 +4,20 @@
 
 如果我的这些笔记和代码，对于您有所帮助，望请不吝Star，鞠躬！
 
+## Q&A
+
+#### * 关于Dagger2/dagger.android的代码有疑问？
+
+如果有疑问，欢迎提出issue，我会第一时间进行回答；
+
+如果您觉得代码有问题，也欢迎提出PR，共同学习。
+
+#### * 关于dagger.android如何在实际项目中（普通的开发模式、组件化开发）使用？
+
+关于组件化（模块化）开发中，如何使用dagger，请参考我的这个项目：
+
+[Mvp-Archtecture MVP模式的模块化开发框架](https://github.com/qingmei2/MvpArchitecture-Android)
+
 ### 我的博客：
 
 ### 这些文章源码所在Module:  app
