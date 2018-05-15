@@ -28,7 +28,6 @@ public class A02Activity extends AppCompatActivity {
     private void inject() {
         DaggerA02Component.builder()
                 .appComponent(ComponentHolder.getAppComponent())
-                .a02Module(new A02Module(this))
                 .build()
                 .inject(this);
 

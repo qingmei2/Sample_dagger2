@@ -13,14 +13,14 @@ import dagger.Provides;
 @Module
 public class A02Module {
 
-    private A02Activity activity;
-
-    public A02Module(A02Activity activity) {
-        this.activity = activity;
-    }
+//    private A02Activity activity;
+//
+//    public A02Module(A02Activity activity) {
+//        this.activity = activity;
+//    }
 
     @Provides
-    Student provideStudent() {
+    static Student provideStudent() {
         return new Student();
     }
 
