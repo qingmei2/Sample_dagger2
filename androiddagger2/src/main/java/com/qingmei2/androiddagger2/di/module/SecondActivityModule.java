@@ -5,10 +5,6 @@ import com.qingmei2.androiddagger2.mvp.activity.SecondActivity;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * Created by QingMei on 2017/8/16.
- * desc:
- */
 @Module
 public abstract class SecondActivityModule {
 

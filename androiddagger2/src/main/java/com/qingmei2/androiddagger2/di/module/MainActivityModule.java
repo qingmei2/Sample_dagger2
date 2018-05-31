@@ -10,10 +10,6 @@ import com.qingmei2.androiddagger2.mvp.activity.MainActivity;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * Created by QingMei on 2017/8/16.
- * desc:
- */
 @Module
 public class MainActivityModule {
 
@@ -32,5 +28,4 @@ public class MainActivityModule {
     static Student provideStudent() {
         return new Student();
     }
-
 }
